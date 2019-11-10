@@ -1,0 +1,28 @@
+[alias]
+	co = checkout
+	cm = commit -m
+	st = status
+	br = branch
+	conb = checkout -b
+	tree = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	sh = stash
+	ash = stash apply
+	a = add
+	aa = add --all
+	delbr = branch -d
+	force-delbr = branch -D
+	find = log --pretty=\"format:%Cgreen%H %Cblue%s\" --name-status --grep
+	delbr-rem = push origin --delete
+	ignmods = update-index --assume-unchanged
+	appmods = update-index --no-assume-unchanged
+	del-ali = config --global --unset
+	ali = config --global
+	show-aliases = config --get-regexp alias
+	file-history = log --follow -p
+	unstage = reset HEAD
+	undo-unstaged = checkout -- .
+	cdiff = diff --cached
+	show-sh = stash show -p
+	commits = log --graph --decorate --oneline --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	change-message = commit --amend -m
+	push-changed-message = push --force-with-lease
