@@ -1,5 +1,5 @@
 #bash
-alias lsa="ls -lah"
+alias lsa="ls -lah --group-directories-first"
 
 #nmap
 alias nmap-intense="nmap -T4 -A -v"
