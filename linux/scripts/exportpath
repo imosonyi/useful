@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Usage: . exportpath <file/dir>
+# Adds the given file/dir to path and reloads the terminal session.
+
+# Get absolute path to file/dir
+abs=`readlink -f $@`
+
+# Add to .bashrc
+echo "" >> ~/.bashrc
+echo "export PATH=\"$abs:\$PATH\"" >> ~/.bashrc
+
+# Reload path to current session
+source ~/.bashrc
+

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Usage: echopath
+# Prints the path variables line by line
+
+IFS=':' read -ra PATHS <<< "$PATH"
+for p in "${PATHS[@]}"; do
+  echo $p
+done
+unset IFS
+
