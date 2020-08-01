@@ -9,6 +9,7 @@
 	ash = stash apply
 	a = add
 	aa = add --all
+	append = commit --amend --no-edit
 	delbr = branch -d
 	force-delbr = branch -D
 	find = log --pretty=\"format:%Cgreen%H %Cblue%s\" --name-status --grep
