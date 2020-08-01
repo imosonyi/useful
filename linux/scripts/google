@@ -1,5 +1,5 @@
 #!/bin/bash
 JOIN="$*"
 QUERY="${JOIN// /+}" # Replace whitespace with '+'
-chromium-browser https://www.google.com/search?q=$QUERY &>/dev/null &
+browser https://www.google.com/search?q=$QUERY
 
