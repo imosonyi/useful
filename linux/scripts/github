@@ -1,0 +1,3 @@
+#!/bin/bash
+chromium-browser https://github.com/ &>/dev/null &
+
