@@ -10,6 +10,5 @@ abs=`readlink -f $@`
 echo "" >> ~/.bashrc
 echo "export PATH=\"$abs:\$PATH\"" >> ~/.bashrc
 
-# Reload path to current session
-source ~/.bashrc
+echo "Please reload path to current session: source ~/.bashrc"
 
