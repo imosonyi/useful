@@ -1,0 +1,12 @@
+#!/bin/bash
+
+BIN="/bin"
+SCRIPT=`readlink -f $1`
+if [ -n "$2" ]; then
+    LINK="$BIN/$2";
+else
+    LINK="$BIN/$1";
+fi
+
+sudo ln -sfn $SCRIPT $LINK
+
